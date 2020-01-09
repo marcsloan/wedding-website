@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link href="//db.onlinewebfonts.com/c/c77f2225063fd0a5185855499a1ed67e?family=Rockwell+Condensed" rel="stylesheet" type="text/css"/>
+
+  <title>Marc Sloan</title>
+</head>
+<body>
+    <script>
+        {#window.GLOBALS = {{ globals | safe }}#}
+        window.GLOBALS = {'STATIC_URL': '/static/'}
+    </script>
+    <div>
+          <div id="react">{{ title }}</div>
+    </div>
+</body>
+{% load static %}
+<script src="{% static "frontend/main.js" %}"></script>
+</html>
